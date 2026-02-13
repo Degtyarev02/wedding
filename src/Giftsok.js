@@ -10,11 +10,19 @@ const Giftsok = () => {
 		},
 		{
 			title: "Сертификат OZON",
-			description: "Там большой выбор товаров!",
+			description: "Там большой выбор товаров, мы обязательно найдем что-нибудь для себя",
 		},
 		{
 			title: "Сертификат в спортивный магазин",
 			description: "Мы бы купили Маше велосипед, а Вове лыжи",
+		},
+		{
+			title: "Сертификат в Hoff или ЛеманаПро",
+			description: "Добавим уюта в доме или сделаем небольшой ремонт",
+		},
+		{
+			title: "Сертификат в Cuva",
+			description: "Отдохнуть мы никогда не против",
 		},
 	];
 
@@ -22,16 +30,12 @@ const Giftsok = () => {
 	const notInterested = [
 		{
 			title: "Сервизы и посуду",
-			description: "У нас маленькая и совсем не вместительная кухня",
-		},
-		{
-			title: "Крупная кухонная техника",
-			description: "По той же причине, ее будет некуда ставить",
+			description: "У нас есть полный комплект посуды",
 		},
 		{
 			title: "Скоропортящиеся товары",
 			description:
-				"Еда и конфеты это очень вкусно, однако они не выдержат 5 часов под июньским солнцем и пропадут",
+				"Еда и конфеты это вкусно, но они не выдержат 5 часов под июньским солнцем и пропадут",
 		},
 		{
 			title: "Одежда",
@@ -39,7 +43,7 @@ const Giftsok = () => {
 		},
 		{
 			title: "Постельное белье",
-			description: "У нас очень своеобразные размеры постельного белья",
+			description: "У нас нестандартные размеры постельного белья",
 		},
 	];
 
@@ -84,10 +88,10 @@ const Giftsok = () => {
 										{item.title}
 									</Typography>
 									<Typography
-										variant="body2"
+										variant="body1"
 										sx={{
 											color: theme.palette.text.secondary,
-											opacity: 0.8,
+											opacity: 1,
 										}}
 									>
 										{item.description}
@@ -129,10 +133,10 @@ const Giftsok = () => {
 										{item.title}
 									</Typography>
 									<Typography
-										variant="body2"
+										variant="body1"
 										sx={{
 											color: theme.palette.text.secondary,
-											opacity: 0.8,
+											opacity: 1,
 										}}
 									>
 										{item.description}

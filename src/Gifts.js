@@ -18,7 +18,7 @@ const Gifts = () => {
 					sx={{ background: 'url("/background.png")' }}
 				>
 					<Box sx={{ display: "flex", flexDirection: "column", mb: 3 }}>
-						<InfoContainer sx={{ height: "auto", mb: 3, display: "flex", alignItems: "center" }}>
+						<InfoContainer sx={{ height: "auto", mb: 3, display: "flex", alignItems: "center", padding: "20px" }}>
 							<NotInterested
 								sx={{
 									fontSize: "2rem",
@@ -37,11 +37,10 @@ const Gifts = () => {
 						<InfoContainer>
 							<Typography
 								variant="h5"
-								sx={{ color: theme.palette.text.primary }}
+								sx={{ color: theme.palette.text.primary, padding: "20px" }}
 							>
-								Мы не сможем разместить цветы после росписи, а даже если они
-								доедут до дома, их будет некуда ставить. <br /> Вместо букета
-								цветов принесите бутылочку вина с пожеланием на какой день нам
+								Нам будет негде разместить цветы после росписи. <br /> Вместо букета
+								цветов вы можете принести бутылочку вина с пожеланием на какой день нам
 								ее открыть. <br /> Если вы не хотите дарить алкоголь, можете
 								заказать в ближайший к мкр. Солнцево-парк ПВЗ пакет корма для
 								собак, а мы отвезем его в приют.

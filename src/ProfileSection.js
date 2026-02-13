@@ -30,7 +30,12 @@ const ProfileSection = () => {
 	});
 
 	return (
-		<Grid container spacing={2} sx={{ background: 'url("/background.png")' }}>
+		<Grid
+			container
+			spacing={2}
+			sx={{ background: 'url("/background.png")' }}
+			justifyContent={"center"}
+		>
 			<Grid
 				mt={5}
 				mb={5}
@@ -52,11 +57,16 @@ const ProfileSection = () => {
 			<Grid item container size={{ xs: 12 }} justifyContent={"center"} mb={5}>
 				<Image src="/us.png" />
 			</Grid>
-			<Grid
-				pb={5}
+			<Box
+				mb={5}
 				container
 				size={{ xs: 12 }}
 				sx={{
+					background: `linear-gradient(45deg, ${theme.palette.primary.main} 30%, ${theme.palette.secondary.main} 90%)`,
+					color: theme.palette.text.primary,
+					padding: "10px 20px",
+					borderRadius: "20px",
+					display: "flex",
 					textAlign: "center",
 					alignItems: "end",
 					justifyContent: "center",
@@ -67,7 +77,7 @@ const ProfileSection = () => {
 				<Typography variant={matches ? "h3" : "h4"}>06</Typography>
 				<Typography variant={matches ? "h3" : "h4"}>/</Typography>
 				<Typography variant={matches ? "h3" : "h4"}>2026</Typography>
-			</Grid>
+			</Box>
 		</Grid>
 	);
 };

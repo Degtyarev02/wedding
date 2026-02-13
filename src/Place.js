@@ -135,9 +135,9 @@ const Place = () => {
                     }}>
                       {item.title}
                     </Typography>
-                    <Typography variant="body2" sx={{ 
+                    <Typography variant="body1" sx={{ 
                       color: theme.palette.text.secondary,
-                      opacity: 0.8
+                      opacity: 1
                     }}>
                       {item.description}
                     </Typography>
