@@ -1,6 +1,8 @@
 import { Box, Divider, Typography, useMediaQuery } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import { styled, useTheme } from "@mui/material/styles";
+import WeddingDate from "./CompactWeddingDate";
+import CompactWeddingDate from "./CompactWeddingDate";
 
 const ImageContainer = styled("div")({
 	width: 200,
@@ -57,27 +59,7 @@ const ProfileSection = () => {
 			<Grid item container size={{ xs: 12 }} justifyContent={"center"} mb={5}>
 				<Image src="/us.png" />
 			</Grid>
-			<Box
-				mb={5}
-				container
-				size={{ xs: 12 }}
-				sx={{
-					background: `linear-gradient(45deg, ${theme.palette.primary.main} 30%, ${theme.palette.secondary.main} 90%)`,
-					color: theme.palette.text.primary,
-					padding: "10px 20px",
-					borderRadius: "20px",
-					display: "flex",
-					textAlign: "center",
-					alignItems: "end",
-					justifyContent: "center",
-				}}
-			>
-				<Typography variant={matches ? "h3" : "h4"}>26</Typography>
-				<Typography variant={matches ? "h3" : "h4"}>/</Typography>
-				<Typography variant={matches ? "h3" : "h4"}>06</Typography>
-				<Typography variant={matches ? "h3" : "h4"}>/</Typography>
-				<Typography variant={matches ? "h3" : "h4"}>2026</Typography>
-			</Box>
+			<CompactWeddingDate/>
 		</Grid>
 	);
 };

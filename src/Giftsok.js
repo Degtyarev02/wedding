@@ -1,16 +1,22 @@
+import {
+	CardGiftcardRounded,
+	NotInterested
+} from "@mui/icons-material";
 import { Box, Grid, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { InfoContainer, ScheduleItem } from "./const";
-import { CardGiftcardRounded, Checkroom, GifBox, GifBoxRounded, NotInterested } from "@mui/icons-material";
 
 const Giftsok = () => {
 	const interested = [
 		{
-			title: "Сертификат в магазин техники",
-			description: "Робот пылесос или моющий пылесос облегчили бы нам рутинную уборку",
+			title: "Конвертик с финансовой поддержкой",
+			description:
+				"Главное для нас — разделить этот день с вами. Но если вы хотите сделать подарок и сомневаетесь в выборе, мы будем рады любой помощи в создании нашего семейного уюта. Искренне ваши, Вова и Маша",
+			isWarm: true,
 		},
 		{
 			title: "Сертификат OZON",
-			description: "Там большой выбор товаров, мы обязательно найдем что-нибудь для себя",
+			description:
+				"Там большой выбор товаров, мы обязательно найдем что-нибудь для себя",
 		},
 		{
 			title: "Сертификат в спортивный магазин",
@@ -20,13 +26,8 @@ const Giftsok = () => {
 			title: "Сертификат в Hoff или ЛеманаПро",
 			description: "Добавим уюта в доме или сделаем небольшой ремонт",
 		},
-		{
-			title: "Сертификат в Cuva",
-			description: "Отдохнуть мы никогда не против",
-		},
 	];
 
-	
 	const notInterested = [
 		{
 			title: "Сервизы и посуду",
@@ -47,7 +48,6 @@ const Giftsok = () => {
 		},
 	];
 
-
 	const theme = useTheme();
 	const matches = useMediaQuery(theme.breakpoints.up("md"));
 	return (
@@ -57,10 +57,10 @@ const Giftsok = () => {
 			sx={{ height: "auto", pb: 6, px: matches ? 4 : 2 }}
 			size={{ xs: 12 }}
 		>
-			<Grid item size={{ xs: 12, md: 6}}>
+			<Grid item size={{ xs: 12, md: 6 }}>
 				<InfoContainer elevation={0}>
 					<Box sx={{ display: "flex", flexDirection: "column", mb: 3 }}>
-						<Box display={"flex"} mb={3} >
+						<Box display={"flex"} mb={3}>
 							<CardGiftcardRounded
 								sx={{
 									fontSize: "2rem",
