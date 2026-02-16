@@ -27,7 +27,7 @@ const ProfileSection = () => {
 	const Image = styled("img")({
 		width: "100%",
 		height: "100%",
-		maxWidth: matches ? "340px" : "200px",
+		maxWidth: matches ? "440px" : "300px",
 		objectFit: "cover",
 	});
 
@@ -35,7 +35,7 @@ const ProfileSection = () => {
 		<Grid
 			container
 			spacing={2}
-			sx={{ background: 'url("/background.png")' }}
+			sx={{ background: 'url("/background.png")', backgroundPosition: matches ? "center" : "" }}
 			justifyContent={"center"}
 		>
 			<Grid
@@ -52,14 +52,26 @@ const ProfileSection = () => {
 					justifyContent: "center",
 				}}
 			>
-				<Typography variant="h3">Приглашаем вас</Typography>
-				<Typography variant="h3">на нашу</Typography>
-				<Typography variant="h2">СВАДЬБУ</Typography>
+				<Box
+					sx={{
+						textAlign: "center",
+						flexDirection: "column",
+						alignItems: "center",
+						justifyContent: "center",
+						background: 'white',
+						padding: "20px 25px",
+						borderRadius: "20px",
+					}}
+				>
+					<Typography variant="h3">Приглашаем вас</Typography>
+					<Typography variant="h3">на нашу</Typography>
+					<Typography variant="h2">СВАДЬБУ</Typography>
+				</Box>
 			</Grid>
 			<Grid item container size={{ xs: 12 }} justifyContent={"center"} mb={5}>
 				<Image src="/us.png" />
 			</Grid>
-			<CompactWeddingDate/>
+			<CompactWeddingDate />
 		</Grid>
 	);
 };
