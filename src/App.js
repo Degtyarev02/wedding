@@ -12,21 +12,21 @@ import Notes from "./Notes";
 // Создаем тему с кастомными цветами
 const theme = createTheme({
   typography: {
-    fontFamily: "'Caveat', 'Dancing Script', cursive",
+    fontFamily: "'Caveat', 'Great Vibes', cursive",
     // Основные варианты текста с рукописными шрифтами
     h1: {
-      fontFamily: "'Dancing Script', cursive",
+      fontFamily: "'Caveat', cursive",
       fontWeight: 700,
       fontSize: "4rem",
       letterSpacing: "0.5px",
     },
     h2: {
-      fontFamily: "'Dancing Script', cursive",
+      fontFamily: "'Caveat', cursive",
       fontWeight: 600,
       fontSize: "3rem",
     },
     h3: {
-      fontFamily: "'Dancing Script', cursive",
+      fontFamily: "'Caveat', cursive",
       fontWeight: 500,
       fontSize: "2.5rem",
     },

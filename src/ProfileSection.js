@@ -47,13 +47,14 @@ const ProfileSection = () => {
 				size={{ xs: 12 }}
 				sx={{
 					textAlign: "center",
-					flexDirection: "column",
+					flexDirection: "row",
 					alignItems: "center",
 					justifyContent: "center",
 				}}
 			>
 				<Box
 					sx={{
+						display: "flex",
 						textAlign: "center",
 						flexDirection: "column",
 						alignItems: "center",
@@ -63,9 +64,9 @@ const ProfileSection = () => {
 						borderRadius: "20px",
 					}}
 				>
-					<Typography variant="h3">Приглашаем вас</Typography>
-					<Typography variant="h3">на нашу</Typography>
-					<Typography variant="h2">СВАДЬБУ</Typography>
+					<Typography variant="h2">Наши дорогие и близкие!</Typography>
+					<Typography variant="h2">Приглашаем вас на нашу</Typography>
+					<Typography variant="h1">СВАДЬБУ</Typography>
 				</Box>
 			</Grid>
 			<Grid item container size={{ xs: 12 }} justifyContent={"center"} mb={5}>
