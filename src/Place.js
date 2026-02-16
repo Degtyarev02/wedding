@@ -24,7 +24,7 @@ const Place = () => {
   const weddingSchedule = [
     { time: "16:00", title: "Сбор гостей", description: "Встреча гостей у ЗАГСа" },
     { time: "17:00", title: "Торжественная церемония", description: "Обмен клятвами и кольцами" },
-    { time: "18:30", title: "Свадебный ужин в кругу родственников", description: "Банкет в ресторане" }
+    { time: "18:30", title: "Свадебный ужин в кругу семьи", description: "Банкет в ресторане" }
   ];
 
   return (
