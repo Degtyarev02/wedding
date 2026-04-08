@@ -22,7 +22,7 @@ const Place = () => {
   const matches = useMediaQuery(theme.breakpoints.up("md"));
 
   const weddingSchedule = [
-    { time: "16:00", title: "Сбор гостей", description: "Встреча гостей у ЗАГСа" },
+    { time: "16:45", title: "Сбор гостей", description: "Встреча гостей у ЗАГСа" },
     { time: "17:00", title: "Торжественная церемония", description: "Обмен клятвами и кольцами" },
     { time: "18:30", title: "Свадебный ужин в кругу семьи", description: "Банкет в ресторане" }
   ];
