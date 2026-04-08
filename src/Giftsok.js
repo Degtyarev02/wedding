@@ -8,7 +8,7 @@ import { InfoContainer, ScheduleItem } from "./const";
 const Giftsok = () => {
 	const interested = [
 		{
-			title: "Конвертик с финансовой поддержкой",
+			title: "Мы ценим Ваше внимание",
 			description:
 				"Главное для нас — разделить этот день с вами. Но если вы хотите сделать подарок и сомневаетесь в выборе, мы будем рады любой помощи в создании нашего семейного уюта. Искренне ваши, Вова и Маша",
 			isWarm: true,
@@ -18,20 +18,15 @@ const Giftsok = () => {
 	const notInterested = [
 		{
 			title: "Сервизы и посуду",
-			description: "У нас есть полный комплект посуды",
 		},
 		{
 			title: "Скоропортящиеся товары",
-			description:
-				"Еда и конфеты это вкусно, но они не выдержат 5 часов под июньским солнцем и пропадут",
 		},
 		{
 			title: "Одежда",
-			description: "Мы еще старую не относили :)",
 		},
 		{
 			title: "Постельное белье",
-			description: "У нас нестандартные размеры постельного белья",
 		},
 	];
 
@@ -59,7 +54,7 @@ const Giftsok = () => {
 								variant="h4"
 								sx={{ color: theme.palette.text.primary }}
 							>
-								Что бы мы хотели в качестве подарка
+								Лучший подарок - это Ваше присутствие
 							</Typography>
 						</Box>
 						{interested.map((item, index) => (
@@ -118,15 +113,6 @@ const Giftsok = () => {
 										}}
 									>
 										{item.title}
-									</Typography>
-									<Typography
-										variant="body1"
-										sx={{
-											color: theme.palette.text.secondary,
-											opacity: 1,
-										}}
-									>
-										{item.description}
 									</Typography>
 								</Box>
 							</ScheduleItem>
