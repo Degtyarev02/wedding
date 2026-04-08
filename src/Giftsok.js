@@ -10,7 +10,7 @@ const Giftsok = () => {
 		{
 			title: "Мы ценим Ваше внимание",
 			description:
-				"Главное для нас — разделить этот день с вами. Но если вы хотите сделать подарок и сомневаетесь в выборе, мы будем рады любой помощи в создании нашего семейного уюта. Искренне ваши, Вова и Маша",
+				"Главное для нас — разделить этот день с Вами. Но если вы хотите сделать подарок и сомневаетесь в выборе, мы будем рады любой помощи в создании нашего семейного уюта. Искренне ваши, Вова и Маша",
 			isWarm: true,
 		},
 	];
@@ -41,7 +41,7 @@ const Giftsok = () => {
 		>
 			<Grid item size={{ xs: 12, md: 6 }}>
 				<InfoContainer elevation={0}>
-					<Box sx={{ display: "flex", flexDirection: "column", mb: 3 }}>
+					<Box sx={{ display: "flex", flexDirection: "column"}}>
 						<Box display={"flex"} mb={3}>
 							<CardGiftcardRounded
 								sx={{
@@ -86,7 +86,7 @@ const Giftsok = () => {
 			</Grid>
 			<Grid item size={{ xs: 12, md: 6 }}>
 				<InfoContainer elevation={0}>
-					<Box sx={{ display: "flex", flexDirection: "column", mb: 3 }}>
+					<Box sx={{ display: "flex", flexDirection: "column"}}>
 						<Box display={"flex"} mb={3}>
 							<NotInterested
 								sx={{

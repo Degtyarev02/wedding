@@ -65,7 +65,7 @@ const ProfileSection = () => {
 					}}
 				>
 					<Typography variant="h2">Наши дорогие и близкие!</Typography>
-					<Typography variant="h2">Приглашаем вас на нашу</Typography>
+					<Typography variant="h2">Приглашаем Вас на нашу</Typography>
 					<Typography variant="h1">СВАДЬБУ</Typography>
 				</Box>
 			</Grid>

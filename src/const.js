@@ -5,7 +5,7 @@ export const InfoContainer = styled(Paper)(({ theme }) => ({
 	flex: 1,
 	backgroundColor: theme.palette.background.paper,
 	borderRadius: "16px",
-	padding: "30px",
+	padding: "25px",
 	height: "100%",
 	boxShadow: "0 8px 32px rgba(255, 182, 193, 0.2)",
 }));

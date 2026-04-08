@@ -45,7 +45,7 @@ const Gifts = () => {
 						<InfoContainer>
 							<Typography
 								variant="h5"
-								sx={{ color: theme.palette.text.primary, padding: "20px" }}
+								sx={{ color: theme.palette.text.primary}}
 							>
 								Нам будет негде разместить цветы после росписи, поэтому они
 								могут быстро завять.
